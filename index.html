@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="cz">
+    <head>
+        <title>Úkol - webové aplikace</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+
+
+    </head>
+    <body>
+        <ul class="nav nav-tabs sticky-top" id="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Druhy webových aplikací</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#vrstvy">Vrstvy webových aplikací</a>
+                    <a class="dropdown-item" href="#mvc">MVC</a>
+                    <a class="dropdown-item" href="#">Webové API</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fáze návrhu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bezpečnostní rizika</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Redakční systémy</a>
+            </li>
+          </ul>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-3 text-center">Webové aplikace</h1>       
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="druhy">
+                <div>
+                    <h2 class="text-center display-4">Druhy webových aplikací</h2>
+                    <div class="vrstvy container" id="vrstvy">
+                        <h3 class="text-center p-4">Vrstvy webových aplikacích</h3>
+                            <p class="display-5">
+                              <strong>V dnešních dobách se webové aplikace rozdělují na více vrstev, z nichž má každá svou roli. Tradičně se uvádějí tyto tři vrstvy:</strong>  
+                            </p>
+                            <div class="my-5">
+                                <img class="img-fluid border" src="./img/vrstvy.png" alt="vrstvy webové aplikace">
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h4>Klientská vrstva</h4>
+                                        <p>Funkci klientské vrstvy plní zpravidla webový prohlížeč, který zobrazuje uživateli obsah a také ho nechává přes klientské rozhraní posílat data na server. Můžeme zde najít technologie jako je HTML, CSS, JavaScript a také jejich knihovny (JQuery) a frameworky (Bootstrap, React).</p>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h4>Logická vrstva</h4>
+                                        <p>Logickou vrstvu představují technologie na dynamické generování webových stránek (PHP, ASP.NET, JSP apod.), jež se nejčastěji zpracovávají na straně webového serveru. Provádějí se zde také úlohy, které nemohou být provedeny na klientské části (validace dat, autentizace uživatelů). 
+                                        </p>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h4>Datová vrstva</h4>
+                                        <p>Na datové vrstvě se nachází zdroj dat, se kterým pracuje logická vrstva (databáze, datové soubory, internetové služby).</p>
+                                    </div>
+                                </div>
+                            </div>   
+                    </div>
+                    <div class="container" id="mvc">
+                        <h3 class="text-center p-4">Architektura MVC</h3>
+                        <p class="display-5">Architektura moderních webových aplikací, jejíž myšlenkou je oddělení aplikační logiky od výstupu. Díky tomuto rozdělení je celá aplikace přehlednější a nedochází k tzv. špagetovému kódu. Architektura MVC se dělí na tyto části:</p>
+                        <ul>
+                            <li>Model obsahuje něco</li>
+                            <li>View taky něco obsahuje</li>
+                            <li>Controller kontroluje</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-center p-3">
+                <a>Matěj Nešuta - 2021</a>
+            </div>
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
