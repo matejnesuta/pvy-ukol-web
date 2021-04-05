@@ -6,9 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
         <link rel="stylesheet" href="./css/style.css">
-
-
     </head>
     <body>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
@@ -29,7 +28,7 @@
                     <a class="nav-link" href="#faze">Fáze návrhu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bezpečnostní rizika</a>
+                    <a class="nav-link" href="#rizika">Bezpečnostní rizika</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Redakční systémy</a>
@@ -54,7 +53,9 @@
                               <strong>V dnešních dobách se webové aplikace rozdělují na více vrstev, z nichž má každá svou roli. Tradičně se uvádějí tyto tři vrstvy:</strong>  
                             </p>
                             <div class="my-5">
-                                <img class="img-fluid border" src="./img/vrstvy.jpg" alt="vrstvy webové aplikace">
+                                <a href="./img/vrstvy.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                    <img class="img-fluid border" src="./img/vrstvy.jpg" alt="vrstvy webové aplikace">
+                                </a>    
                             </div>
                             <div class="container">
                                 <div class="row">
@@ -77,11 +78,20 @@
                     <div class="container" id="mvc">
                         <h3 class="text-center p-4">Architektura MVC</h3>
                         <p class="display-5"><strong>Architektura moderních webových aplikací, jejíž myšlenkou je oddělení aplikační logiky od výstupu. Díky tomuto rozdělení je celá aplikace přehlednější a nedochází k tzv. špagetovému kódu. Architektura MVC se dělí na tyto části:</strong></p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum minima a necessitatibus maiores accusamus. Tenetur delectus labore molestias, accusantium sunt perspiciatis quaerat omnis asperiores, vitae optio, deleniti ratione nemo. Odit quidem in, rerum necessitatibus recusandae odio, fugiat repudiandae voluptates alias tempore labore est! Minima corrupti consequuntur excepturi. Sapiente, distinctio.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id voluptates nesciunt adipisci numquam et earum accusamus sed voluptatum dolore laborum natus vero dolor fuga corrupti quidem veritatis, incidunt assumenda omnis. Debitis, voluptates inventore. Deleniti minima aperiam maxime laudantium rerum perferendis suscipit accusantium odio, eos possimus sint facilis architecto ratione?</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi voluptatem fugit recusandae omnis numquam odit veritatis suscipit ipsum excepturi quibusdam ratione debitis quam provident consequuntur reprehenderit, expedita dignissimos delectus voluptates eius in fuga aperiam optio reiciendis. Ad fuga, corporis dolore numquam impedit incidunt nesciunt illo hic. Porro blanditiis nihil incidunt?</li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-sm-7">    
+                                <ul>
+                                    <li><strong>Model</strong> - obsahuje logiku aplikace, k níž můžeme zařadit výpočty, databázové dotazy, validace a podobně. Jeho úkolem je podle zadaných parametrů zpracovat určitá vstupní data a připravit z nich data výstupní.  O tom, jak bude se výstupními daty nakonec naloženo, nerozhoduje. </li>
+                                    <li><strong>View</strong> <em>(pohled) - </em> reaguje na to, jak se podařilo modelu zpracovat data. Má na starost zobrazení výstupu dat, která mu byla modelem předána a nebo alternativně zobrazení chybové hlášky.</li>
+                                    <li><strong>Controller</strong> - zajišťuje komunikaci mezi klientem, modelem a pohledem.</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-5">
+                                <a href="./img/mvc.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                    <img class="img-fluid border" src="./img/mvc.jpg" alt="vrstvy webové aplikace">
+                                </a>    
+                            </div>    
+                        </div>    
                     </div>
                     <div class="container" id="api">
                         <h3 class="text-center p-4">Webová API</h3>
@@ -155,23 +165,25 @@
                     <div class="container">
                         <div id="carouselExampleIndicators" class="carousel slide border" data-ride="carousel">
                             <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active border"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1" class="border"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="border"></li>
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img class="d-block w-100" src="./img/xss.jpg" alt="First slide">
+                                <a href="./img/xss.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                    <img class="d-block w-100" src="./img/xss.jpg" alt="First slide">
+                                </a>    
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/phishing.jpg" alt="Second slide">
+                                <a href="./img/phishing.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                    <img class="d-block w-100" src="./img/phishing.jpg" alt="Second slide">
+                                </a>
                               </div>
                               <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/injection.jpg" alt="Third slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/injection.jpg" alt="Third slide">
+                                <a href="./img/injection.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                    <img class="d-block w-100" src="./img/injection.jpg" alt="Third slide">
+                                </a>    
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -196,5 +208,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
