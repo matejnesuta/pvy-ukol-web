@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#rizika">Bezpečnostní rizika</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Redakční systémy</a>
+                    <a class="nav-link" href="#redakcni">Redakční systémy</a>
                 </li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
                               <strong>V dnešních dobách se webové aplikace rozdělují na více vrstev, z nichž má každá svou roli. Tradičně se uvádějí tyto tři vrstvy:</strong>  
                             </p>
                             <div class="my-5">
-                                <a href="./img/vrstvy.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                <a href="./img/vrstvy.jpg" data-toggle="lightbox">
                                     <img class="img-fluid border" src="./img/vrstvy.jpg" alt="vrstvy webové aplikace">
                                 </a>    
                             </div>
@@ -87,7 +87,7 @@
                                 </ul>
                             </div>
                             <div class="col-sm-5">
-                                <a href="./img/mvc.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                <a href="./img/mvc.jpg" data-toggle="lightbox">
                                     <img class="img-fluid border" src="./img/mvc.jpg" alt="vrstvy webové aplikace">
                                 </a>    
                             </div>    
@@ -95,22 +95,29 @@
                     </div>
                     <div class="container" id="api">
                         <h3 class="text-center p-4">Webová API</h3>
-                        <p class="display-5"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos natus nesciunt rerum esse voluptates minima cupiditate modi eaque earum quibusdam amet nobis magnam sit assumenda possimus dolorem pariatur quia eum recusandae reprehenderit inventore, labore, autem laboriosam delectus? Dolores mollitia laudantium a esse accusamus qui! Voluptatibus temporibus voluptate id tenetur veniam.</strong></p>
+                        <p class="display-5"><strong>API (Application Programming Interface) označuje v informatice rozhraní pro programování aplikací. 
+                            Jde o komplex procedur, funkcí, tříd či protokolů nějaké knihovny (ale i programu nebo jádra operačního systému), které může programátor využívat. API určuje, jakým způsobem jsou funkce knihovny volány ze zdrojového kódu programu.
+                            V praxi se můžeme setkat s celou řadou API - s API operačních systémů, grafickými API (OpenGL, DirectX, Vulkan) nebo s API databázových a informačních systémů.
+                        </strong></p>
+                        <div class="container">
+                            <p class="display-5">API se nyní hojně využívá při vývoji mobilních i webových aplikací a tvorbě internetových stránek. Smyslem webových API je zajištění komunikace mezi dvěma platformami, které si vzájemně vyměňují data. Umožňují využívat již naprogramovaná řešení a integrovat je do vlastních webů.
+                            </p>
+                            <p class="display-5">V praxi se s integrací aplikačního rozhraní setkáváme třeba na stránkách zobrazujících polohu obchodu na Google mapách. V takovém případě je využito API z Google Map, které volají vrstvu kódu, jež zobrazuje požadovaná data.
+                                API jsou využívána také čtečkami zpráv (RSS), kde umožňují výpis článků, nebo při přihlášení na webu a v mobilní aplikaci pomocí externího účtu (Facebook, LinkedIn atd.). Stejně tak umožňují přidávání komentářů například na sociální sítě. API může být součástí účetního software a díky tomu lze automaticky vygenerovat fakturu při nákupu z e-shopu a zapsat ji do databáze v účetnictví.
+                            </p>
+                        </div>    
                         <h4 class="text-center p-4">Nejdůležitější webová API</h4>
                         <dl class="row">
-                            <dt class="col-sm-2">Description lists</dt>
-                            <dd class="col-sm-10">A description list is perfect for defining terms.</dd>
+                            <dt class="col-sm-2">SOAP</dt>
+                            <dd class="col-sm-10">Nejstarším druhem je Simple Object Access Protocol, zkráceně SOAP, určený pro volání procedur za využití XML. Jeho cílem je snazší sdílení informací různých aplikací, běžících v různých prostředích nebo v různých jazycích. Jedná se tedy o nástroj odstraňující bariéry mezi odlišnými platformami. Dnes je využíván převážně bankami a pojišťovnami; v ČR tento typ API využívá systém EET. </dd>
                           
-                            <dt class="col-sm-2">Euismod</dt>
-                            <dd class="col-sm-10">
-                              <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                              <p>Donec id elit non mi porta gravida at eget metus.</p>
+                            <dt class="col-sm-2">REST</dt>
+                            <dd class="col-sm-10">REST API je architektura fungující na principu klient-server, kdy veškerá uživatelská data zůstávají uložena na straně klienta. Díky tomu by nemělo dojít k úniku citlivých dat. Jedná se o pravděpodobně nejpoužívanější řešení určené k tvorbě aplikačních rozhraní. Ke své funkci využívá HTTP protokol. Klient pak při dotazech potřebuje znát tzv. endpointy (koncové body - předepsané URL požadavky), na které zasílá dotazy (případně i data). Komunikace mezi klientem je bezestavová.
                             </dd>
 
-                            <dt class="col-sm-2">Euismod</dt>
+                            <dt class="col-sm-2">GraphQL</dt>
                             <dd class="col-sm-10">
-                              <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                              <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                Původně vyvíjené Facebookem, ale časem se z něj stal open-source a může tak být bezplatně využíván širokou veřejností. GRAPHQL je jazyk dotazů, který běží na straně serveru. Umožňuje stahovat data z více zdrojů najednou, což znatelně ulehčuje práci programátorů. Nabízí větší rychlost zpracování než REST API, má bohatší škálu využití, není závislý na architektuře a lze ho implementovat i nad stávající REST API.
                             </dd>
                         </dl>
                         <div class="container-*">
@@ -124,7 +131,7 @@
                                 <tbody>
                                     <tr>
                                         <td>Simple Object Access Protocol</td>
-                                        <td>REST stands for Representational State Transfer</td>
+                                        <td>Representational State Transfer</td>
                                     </tr>
                                     <tr>     
                                         <td>SOAP je protokol designovaný se specifikací.</td>
@@ -163,38 +170,52 @@
                 <div>
                     <h2 class="text-center">Bezpečnostní rizika webových aplikací</h2>
                     <div class="container">
-                        <div id="carouselExampleIndicators" class="carousel slide border" data-ride="carousel">
+                        <div id="galerie" class="carousel slide border" data-ride="carousel">
                             <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active border"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1" class="border"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="border"></li>
+                              <li data-target="#galerie" data-slide-to="0" class="active border"></li>
+                              <li data-target="#galerie" data-slide-to="1" class="border"></li>
+                              <li data-target="#galerie" data-slide-to="2" class="border"></li>
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <a href="./img/xss.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                <a href="./img/xss.jpg" data-toggle="lightbox" data-gallery="carousel">
                                     <img class="d-block w-100" src="./img/xss.jpg" alt="First slide">
-                                </a>    
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cross-site scripting</h5>
+                                </div>
                               </div>
                               <div class="carousel-item">
-                                <a href="./img/phishing.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                <a href="./img/phishing.jpg" data-toggle="lightbox" data-gallery="carousel">
                                     <img class="d-block w-100" src="./img/phishing.jpg" alt="Second slide">
                                 </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Phishing</h5>
+                                </div>
                               </div>
                               <div class="carousel-item">
-                                <a href="./img/injection.jpg" data-toggle="lightbox" data-gallery="my-gallery">
+                                <a href="./img/injection.jpg" data-toggle="lightbox" data-gallery="carousel">
                                     <img class="d-block w-100" src="./img/injection.jpg" alt="Third slide">
-                                </a>    
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>SQL injection</h5>
+                                </div>    
                               </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#galerie" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#galerie" role="button" data-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
                             </a>
                     </div>
+                </div>
+            </section>
+            <section id="redakcni">
+                <div>
+                    <h2 class="text-center">Redakční systémy a e-commerce</h2>
                 </div>
             </section>
         </main>

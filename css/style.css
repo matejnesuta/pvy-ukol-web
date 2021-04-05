@@ -31,3 +31,11 @@ section{
     background-color: white;
 }
 
+#galerie h5 {
+    background-color: rgba(43, 43, 43, 0.5)
+}
+
+.carousel-caption {
+    left: 40%;
+    right: 40%;
+}
