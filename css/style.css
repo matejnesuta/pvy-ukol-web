@@ -9,6 +9,18 @@ h1, h2, h3, p, a {
     font-family: 'Raleway';
 }
 
+header {
+    background-color: #F3F3F3;
+}
+
+header .jumbotron {
+    margin: 0;
+}
+
+.jumbotron {
+    background-color: #F3F3F3;
+}
+
 h1 {
     margin-bottom: 0;
 }
@@ -17,18 +29,30 @@ h2 {
     font-size: 2.5rem;
 }
 
+
 section{
     padding-bottom: 8rem;
+    
 }
 
-.home-icon {
-    max-width: auto;
-    max-height: auto;
-    display: block; /* remove extra space below image */
-}
-
-#nav {
+#druhy {
     background-color: white;
+}
+
+#druhy .container {
+    background-color: #F3F3F3;
+}
+
+#druhy h2 {
+    color: #283747;
+}
+
+.navbar {
+    background-color: #283747;
+}
+
+.navbar-toggler{
+    color: #F3F3F3;
 }
 
 #galerie h5 {
@@ -39,3 +63,16 @@ section{
     left: 40%;
     right: 40%;
 }
+
+/*------------------------------Barvy------------------------------*/
+/*
+Bright Red: #DE354C
+
+Deep Red: #932432
+
+Pure Purple: #3C1874
+
+Purple Tinged Grey: #283747
+
+Cloud: #F3F3F3
+*/
