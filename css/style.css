@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
+    scroll-padding-top: 5rem;
 }
 
 h1, h2, h3, p, a {
@@ -27,21 +27,47 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
+.card-title {
+    margin-bottom: 0;
+}
 
-section{
-    padding-bottom: 8rem;
+hr {
+    width: 3%;
+    border: 1px solid black;
+}
+
+section {
+    margin-bottom: 8rem;
+    padding: 3rem 0;
     
+}
+
+dd {
+    padding-bottom: 3rem;
 }
 
 #druhy {
     background-color: white;
 }
 
-#druhy .container {
+#faze {
     background-color: #F3F3F3;
 }
+
+#api {
+    padding: 0 3rem;
+}
+
+#redakcni p {
+    margin-bottom: 0;
+}
+
+/*#druhy .container {
+    background-color: #F3F3F3;
+}*/
 
 #druhy h2 {
     color: #283747;
