@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500;1,600');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,800;1,500;1,600');
 
 html {
     scroll-behavior: smooth;
@@ -10,24 +10,39 @@ h1, h2, h3, p, a {
 }
 
 header {
-    background-color: #F3F3F3;
-}
-
-header .jumbotron {
-    margin: 0;
+    background-image: linear-gradient(to top, white, #F3F3F3);
+    /*background-color: #F3F3F3;*/
 }
 
 .jumbotron {
     background-color: #F3F3F3;
 }
 
+header .jumbotron, header .container {
+    background-color: rgba(43, 43, 43, 0);
+}
+
+header .jumbotron {
+    
+    margin: 0;
+}
+
 h1 {
     margin-bottom: 0;
+    font-weight: 600!important;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 0;
+}
+
+a:hover, tr:hover, thead:hover, h3, dt, #mvc li strong, #faze li strong {
+    color: #7096ff!important;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .card-title {
@@ -36,13 +51,22 @@ h2 {
 
 hr {
     width: 3%;
-    border: 1px solid black;
+    border: 1px solid #7096ff;
 }
 
 section {
     margin-bottom: 8rem;
     padding: 3rem 0;
     
+}
+
+footer, thead{
+    background-color: #283747;
+    color: #F3F3F3;
+}
+
+footer a {
+    font-size: 1.2rem;
 }
 
 dd {
@@ -83,6 +107,14 @@ dd {
 
 #galerie h5 {
     background-color: rgba(43, 43, 43, 0.5)
+}
+
+#ecommerce {
+    margin: 0;
+}
+
+#ecommerce p {
+    padding: 1.5rem;
 }
 
 .carousel-caption {
